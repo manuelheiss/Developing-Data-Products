@@ -4,7 +4,7 @@ shinyUI(
   pageWithSidebar(
     headerPanel("String similarity measures"),
     sidebarPanel(
-      h5("This app calculates the similarity for two entered strings. The similarity is a value between 0 and 1. It is calculated according to all selected similarity measures."),
+      h5("This app calculates the similarity for two entered strings. The similarity is a value between 0 and 1, a higher value indicates a higher degree of similarity. If similarity is 0 the two strings are not similar at all, if it is 1 they are identical. The similarity is calculated according to all selected similarity measures. Please note that for N-Gram, Jaccard and Cosine the size of the grams which those algorithms are working on must be set with a slider."),
       h4("Choose similarity measures to be applied:"),
       checkboxInput("Exact", "Exact"),
       checkboxInput("Jaro", "Jaro"),
