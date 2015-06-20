@@ -134,7 +134,6 @@ shinyServer(
       # Upper case both input strings.
       s1 <- toupper(input$string1)
       s2 <- toupper(input$string2)
-      s2 <- toupper(input$string2)
       # Calculate biggest applicable n for Cosine similarity.
       n <- max(1, min(input$nCosine, min(nchar(s1), nchar(s2))))
       # Do similarity calculation using "stringdist".
@@ -155,7 +154,6 @@ shinyServer(
     simJaccard <- eventReactive(input$Calculate, {
       # Upper case both input strings.
       s1 <- toupper(input$string1)
-      s2 <- toupper(input$string2)
       s2 <- toupper(input$string2)
       # Calculate biggest applicable n for Jaccard similarity.
       n <- max(1, min(input$nJaccard, min(nchar(s1), nchar(s2))))
